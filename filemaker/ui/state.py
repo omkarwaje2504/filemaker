@@ -135,6 +135,7 @@ class AppState:
     def replace_df(self, df, message: str) -> None:
         """The table was modified in place (e.g. path builder added a column)."""
         self.df = df
+        data_service.auto_map(self.project.mappings, self.columns)
         self.publish("data")
         self.publish("row")
         self.status(message, "success")

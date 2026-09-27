@@ -1,6 +1,6 @@
 """Step 2 - Template: base artwork, design JSON, and field -> column mapping."""
 import os
-from tkinter import filedialog, messagebox, ttk
+from tkinter import messagebox, ttk
 
 from ...models.project import KIND_IMAGE
 from ...services.data_service import (
