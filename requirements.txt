@@ -1,0 +1,6 @@
+pandas
+openpyxl
+pillow
+requests
+qrcode[pil]
+pymupdf
